@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProductPractic3.DataSetWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductPractic3"
+        mc:Ignorable="d"
+        Title="DataSetWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" x:Name="DataSetTable" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Visibility="Collapsed" Binding="{Binding ID_People}" />
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding SurnamePeople}" />
+                <DataGridTextColumn Header="Имя" Binding="{Binding NamePeople}" />
+                <DataGridTextColumn Header="Отчество" Binding="{Binding MiddleNamePeople}" />
+                <DataGridTextColumn Header="Должность" Binding="{Binding WorkPost}" />
+                <DataGridTextColumn Header="Дата начала работы" Binding="{Binding DateStartOfWork}" />
+                <DataGridTextColumn Header="Зарплата" Binding="{Binding Salary}" />
+                <DataGridTextColumn Header="Номер" Visibility="Collapsed" Binding="{Binding People_ID}" />
+                <DataGridTextColumn Header="Номер" Visibility="Collapsed" Binding="{Binding WorkInfo_ID}" />
+                <DataGridTextColumn Header="Номер" Visibility="Collapsed" Binding="{Binding ID_WorkInfo}" />
+                <DataGridTextColumn Header="Номер" Visibility="Collapsed" Binding="{Binding ID_People}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
